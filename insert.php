@@ -11,6 +11,15 @@ $Credits=$_POST['Credits'];
 $q="INSERT INTO `add_crud` (`Name`,`Email`, `Credits`)VALUES('$Name','$Email','$Credits')";
 
 $query=mysqli_query($con,$q);
+
+if($query){
+  echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+     <strong>User Added Sucessfully!</strong>
+     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+     </button>
+   </div>';
+}
 }
  ?>
 

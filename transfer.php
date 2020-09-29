@@ -137,7 +137,7 @@ if(isset($_POST['done']))
             </table>
               
             <label>To</label>
-            <select class=" form-control" name="to" style="margin-bottom:5%;">
+            <select class=" form-control" required name="to" style="margin-bottom:5%;">
             <option value="" disabled selected> To </option>
             <?php
                 include 'connection.php';

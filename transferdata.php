@@ -39,8 +39,8 @@ Home</button></a></div>
     <table class="table text-center table-striped table-hover table-bordered table-dark">
     <thead>
     <tr>
-    <th>Name</th>
-    <th>Email</th>
+    <th>Sender</th>
+    <th>Receiver</th>
     <th>Credits</th>
   
     </tr>
@@ -50,7 +50,7 @@ Home</button></a></div>
 
 include 'connection.php';
 
-$q ="select * from transaction";
+$q ="select * from transaction ORDER BY id DESC";
 
 $query =mysqli_query($con, $q);
 
